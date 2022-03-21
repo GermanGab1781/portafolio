@@ -1,9 +1,11 @@
 import { Container, Row, Col} from "react-bootstrap";
+import Helmet from "react-helmet";
 import "./myStyles.css";
 function App() {
   const gpSasuke = require('./Gp-Sasuke.jpg');
   return (
     <Container>
+      <Helmet><title>Germán Gabriel</title></Helmet>
       <Container>
         <Row className="mt-2">
           <Col className="col-md-5">
