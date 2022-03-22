@@ -2,6 +2,32 @@
     background-color:deepskyblue;
 }
 
+.buttonPositionBottom{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    width: 100%;  
+}
+.buttonPositionTop{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    width: 100%; 
+ 
+}
+.buttonPrefs{
+    color: black;
+    border: solid;
+}
+
 .title{
     font-size: 3em;
     font-weight:bolder;
