@@ -5,16 +5,23 @@ function App() {
   const gpSasuke = require('./Gp-Sasuke.jpg');
   return (
     <Container>
-      <Helmet><title>Germán Gabriel</title></Helmet>
+      <Helmet>
+        <title>Germán Gabriel</title>
+        <body className="bodyPrefs"></body>
+      </Helmet>
       
       <Container>
         <Row className="mt-2">
-          <Col className="col-md-5">
-            <span className="title">Germán Gabriel</span><br/>
-            <span className="subTitle">Programador Independiente</span>
+          <Col className="col-md m-auto">
+            <div className="titleWrapper">
+              <span className="title">Germán Gabriel</span><br/>
+              <span className="subTitle">Programador Independiente</span>
+            </div>            
           </Col>
           
-          <Col className="col-md-7"><img src={gpSasuke}></img></Col>
+          <Col className="col-md-7">
+            <img className="profileImage" src={gpSasuke}></img>
+          </Col>
         </Row>
       </Container>
 
