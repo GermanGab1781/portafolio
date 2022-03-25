@@ -1,18 +1,14 @@
 import { useState } from "react";
 import { Button } from "react-bootstrap";
-import "../myStyles.css";
+import "../slider.css";
 
 export default function SliderButton() {
   
-  const [sliderButton, setSliderButton]= useState(true);
-
-  const toggleClass= () =>{
-    setSliderButton(!sliderButton)
-  }
+  const [show, setShow]= useState(false);
   
   return (
-    <div className={sliderButton ? "buttonPositionBottom" : "buttonPositionTop"}>
-        <Button onClick={toggleClass}>GO</Button>
+    <div className={show ? "sliderInfo show" : "sliderInfo"}>
+        <Button onClick={()=>setShow(!show)}>GO</Button>
     </div>
   )
 }

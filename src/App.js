@@ -1,8 +1,7 @@
-import { useState } from "react";
 import { Container, Row, Col, Button} from "react-bootstrap";
 import Helmet from "react-helmet";
 import SliderButton from "./components/SliderButton"
-import "./myStyles.css";
+import "./index.css";
 
 function App() {
 
