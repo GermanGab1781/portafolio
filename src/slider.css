@@ -1,5 +1,7 @@
 .sliderInfo{
     background-color: aquamarine;
+    border-radius: 50% 50% 0% 0%;
+    border: solid;
     text-align: center;
     position: absolute;
     overflow:hidden;
@@ -10,6 +12,7 @@
     transition: 2.5s; 
 }
 .sliderInfo.show{
+    border-radius: 5% 5% 0% 0%;
     background-color: aquamarine;
     text-align: center;
     position:absolute;
@@ -21,14 +24,20 @@
 }
 
 .buttonPrefs{
+    border-radius: 50% 50% 20% 20%;
     margin:auto;
+    margin-top: 0.1vw;
     color: black;
     position: inherit;
     border: solid;
     width: 20%;
     left:40%;
     height:auto;
-    cursor: pointer;  
+    cursor: pointer;
+    transition: background-color 1s;  
+}
+.buttonPrefs:hover{
+    background-color:cornflowerblue;
 }
 
 .arrow{
@@ -46,10 +55,9 @@
 }
 
 .sliderChildren{
-    position:absolute;
-    display:block;
+    position: absolute;
+    margin-left:3vw;
     text-align: left;
-    margin-top:0vw;
     height: 0%;
     width: 0%;
     opacity:0;
@@ -59,7 +67,7 @@
 }
 
 .sliderChildren.show{
-    margin-top:2vw;
+    margin-top:3vw;
     opacity: 1;
     height: 100%;
     width: 100%;

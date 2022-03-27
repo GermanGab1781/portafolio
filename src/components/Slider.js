@@ -1,9 +1,9 @@
 import { useState } from "react";
 import "../slider.css";
 
-export default function SliderButton(props) {
+export default function Slider(props) {
   
-  const [show, setShow]= useState(false);
+  const [show, setShow]= useState(true);
   
   return (
     <div className={show ? "sliderInfo show" : "sliderInfo"}>     

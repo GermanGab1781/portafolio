@@ -1,7 +1,10 @@
-import { Container, Row, Col, Button} from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Container, Row, Col} from "react-bootstrap";
 import Helmet from "react-helmet";
-import SliderButton from "./components/SliderButton"
+import Slider from "./components/Slider";
+import {faGithub, faInstagram} from "@fortawesome/free-brands-svg-icons";
 import "./index.css";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
 
@@ -31,10 +34,22 @@ function App() {
         </Row>
       </Container>
 
-      <SliderButton>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      <div><img src={gpSasuke}></img></div>
-      </SliderButton>
+      <Slider>
+        <div className="socialMediaSection">
+          <a href="#"><FontAwesomeIcon className="icons" icon={faGithub}/>
+            Github
+          </a>
+          <a href="#"><FontAwesomeIcon className="icons" icon={faInstagram}/>
+            Instagram
+          </a>
+          <a href="#"><FontAwesomeIcon className="icons" icon={faPhone}/>
+            0221-5770092
+          </a>
+        </div>
+        <div className="introductionSection">
+          
+        </div>
+      </Slider>
 
     </Container>
   );
