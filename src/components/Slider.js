@@ -3,7 +3,7 @@ import "../slider.css";
 
 export default function Slider(props) {
   
-  const [show, setShow]= useState(true);
+  const [show, setShow]= useState(false);
   
   return (
     <div className={show ? "sliderInfo show" : "sliderInfo"}>     
