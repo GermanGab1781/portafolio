@@ -56,14 +56,19 @@
 
 .sliderChildren{
     position: absolute;
-    margin-left:3vw;
-    text-align: left;
+    display:grid;
+    grid-template-areas: 'Intro Intro'
+                         'Social Languages'                   
+    ;
+    grid-row-gap: 10%;
+    align-content:start;
     height: 0%;
     width: 0%;
     opacity:0;
     overflow: hidden;
     transition:height 1s ease 1s, width 1s ease 1s , opacity 1s , margin-top 2s , top 5s;
     top:200%;
+    padding: 1vw;
 }
 
 .sliderChildren.show{
