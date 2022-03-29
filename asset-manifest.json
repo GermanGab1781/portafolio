@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portafolio/static/css/main.b7af8d01.css",
-    "main.js": "/portafolio/static/js/main.1bc9c2ea.js",
+    "main.css": "/portafolio/static/css/main.8555e65e.css",
+    "main.js": "/portafolio/static/js/main.e63b6de0.js",
     "static/media/Gp-Sasuke.jpg": "/portafolio/static/media/Gp-Sasuke.b7bc7f42f808dcb21a24.jpg",
     "index.html": "/portafolio/index.html",
-    "main.b7af8d01.css.map": "/portafolio/static/css/main.b7af8d01.css.map",
-    "main.1bc9c2ea.js.map": "/portafolio/static/js/main.1bc9c2ea.js.map"
+    "main.8555e65e.css.map": "/portafolio/static/css/main.8555e65e.css.map",
+    "main.e63b6de0.js.map": "/portafolio/static/js/main.e63b6de0.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7af8d01.css",
-    "static/js/main.1bc9c2ea.js"
+    "static/css/main.8555e65e.css",
+    "static/js/main.e63b6de0.js"
   ]
 }
