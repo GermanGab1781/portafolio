@@ -19,18 +19,12 @@ function App() {
         <body className="bodyPrefs"></body>
       </Helmet>
       
-      <Container fluid>
-        <Row className="mt-1 mb-1">
-          <Col className="col-md m-auto">
-            <div className="titleWrapper">
-              <span className="title">Germán Gabriel</span><br/>
-              <span className="subTitle">Programador Independiente</span>
-            </div>            
-          </Col>          
-          <Col className="col-md-7">
-            <img className="profileImage" src={gpSasuke}></img>
-          </Col>
-        </Row>
+      <Container fluid className="firstPage">
+          <div className="titleWrapper">
+            <span className="title">Germán Gabriel</span><br/>
+            <span className="subTitle">Programador Independiente</span>
+          </div>            
+          <img className="profileImage" src={gpSasuke}></img>
       </Container>
 
       <Slider>

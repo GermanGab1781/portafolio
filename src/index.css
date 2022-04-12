@@ -1,59 +1,78 @@
-.bodyPrefs{
-    background-color:deepskyblue;
+@media all and (orientation:landscape){
+    .bodyPrefs{
+        background-color:deepskyblue;
+    }
+    .title{
+        font-size: 3em;
+        font-weight:bolder;
+        font-family:monospace;
+        color:darkblue;
+    }
+
+    .subTitle{
+        font-size: 1.5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:blue;
+        margin-left: 3em;
+    }
+    .titleWrapper{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .titleWrapper:hover{
+        transform: scale(1.1);
+    }
+
+    .profileImage{    
+        width: 98%;
+        height: 98%;
+        border-radius: 50%;
+        transition:1.5s;
+    }
+
+    .profileImage:hover{
+        transform: scale(0.9);
+        border-radius:47%;
+    }
+
+    .introductionSection{
+        display:inline-block;
+        grid-area: Intro;
+    }
+    .socialMediaSection{
+        grid-area:Social;
+        display: grid;
+        grid-template-columns:auto auto auto;
+        justify-content: center;
+        align-content: center;
+        grid-column-gap: 1vw;
+    }
+    .languagesSection{
+        grid-area:Languages;
+        display:grid;
+        padding-left: 2vw;
+    }
+    .icon{
+    height: 5vw;
+    }
+    .iconText{
+        display: inherit;
+        text-align: center;
+    }
 }
 
-.title{
-    font-size: 3em;
-    font-weight:bolder;
-    font-family:monospace;
-    color:darkblue;
-}
-
-.subTitle{
-    font-size: 1.5em;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:blue;
-    margin-left: 3em;
-}
-.titleWrapper{
-    overflow: hidden;
-    transition: 0.5s;
-}
-.titleWrapper:hover{
-    transform: scale(1.1);
-}
-
-.profileImage{    
-    border-radius: 50%;
-    transition:1.5s;
-}
-
-.profileImage:hover{
-    transform: scale(0.9);
-    border-radius:47%;
-}
-
-.introductionSection{
-    display:inline-block;
-    grid-area: Intro;
-}
-.socialMediaSection{
-    grid-area:Social;
-    display: grid;
-    grid-template-columns:auto auto auto;
-    justify-content: center;
-    align-content: center;
-    grid-column-gap: 1vw;
-}
-.languagesSection{
-    grid-area:Languages;
-    display:grid;
-    padding-left: 2vw;
-}
-.icon{
-   height: 5vw;
-}
-.iconText{
-    display: inherit;
-    text-align: center;
+@media all and (orientation:portrait){
+    .bodyPrefs{
+        background-color: red;
+    }
+    .titleWrapper{
+        text-align: center;
+    }
+    .title{
+        font-size: 4.5vw;
+    }    
+    .subTitle{
+        font-size: 3vw;
+        margin-left: 0em;
+    }
 }
