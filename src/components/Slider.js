@@ -1,19 +1,16 @@
 import { useState } from "react";
-import { Container } from "react-bootstrap";
 import "../slider.css";
 
-export default function Slider(props) {
-  
-  const [show, setShow]= useState(false);
-  
+
+export default function Slider(props,handleState,sliderState) {
   return (
-    <Container className={show ? "sliderInfo show" : "sliderInfo"}>     
-      <div onClick={()=> setShow(!show)} className="buttonPrefs">
-        <span className={show ? "arrow down" : "arrow up"}></span>
-      </div>
-      <div className={show ? "sliderChildren show" : "sliderChildren"}>
+    <div className={sliderState ? "sliderInfo show" : "sliderInfo"}>     
+      <button onClick={handleState} className="buttonPrefs">
+        <span className={sliderState ? "arrow down" : "arrow up"}></span>
+      </button>
+      <div className={sliderState ? "sliderChildren show" : "sliderChildren"}>
         {props.children}
       </div>           
-    </Container>
+    </div>
   );
 }
