@@ -1,24 +1,36 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container} from "react-bootstrap";
-import Slider from "./components/Slider";
 import {faGithub, faInstagram, faWhatsapp} from "@fortawesome/free-brands-svg-icons";
 import "./index.css";
-import "./slider.css";
 import { useState } from "react";
 
 function App() {
 
   const [showSlider, setShowSlider]= useState(false);
-
+  const [showArrow, setShowArrow]= useState(false);
   
 
   return (
     <Container>     
       
-      <Container className="titleWrapper" onClick={()=>setShowSlider(!showSlider)}>
+      <Container className="titleWrapper" onMouseEnter={()=>setShowArrow(true)} onClick={()=>setShowSlider(!showSlider)}>
         <span className="title">Germán Gabriel</span><br/>
-        <span className="subTitle">Programador Independiente</span>
-      </Container>            
+        <span className="subTitle">Programador Independiente</span>    
+      </Container>
+      <Container className="arrowsWrapper">
+        <Container className="leftArrows">
+          <span className={showArrow ? "iconArrow left show" : "iconArrow"}></span>        
+          <span className={showArrow ? "iconArrow left show" : "iconArrow"}></span>    
+          <span className={showArrow ? "iconArrow left show" : "iconArrow"}></span>      
+        </Container>   
+        <Container className="rightArrows">
+          <span className={showArrow ? "iconArrow right show" : "iconArrow"}></span>    
+          <span className={showArrow ? "iconArrow right show" : "iconArrow"}></span>  
+          <span className={showArrow ? "iconArrow right show" : "iconArrow"}></span>   
+        </Container>
+      </Container>    
+      <br></br>
+               
 
       <div className={showSlider ? "sliderInfo show" : "sliderInfo"}>     
         <button onClick={()=>setShowSlider(!showSlider)} className="buttonPrefs">
